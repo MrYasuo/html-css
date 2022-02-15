@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #160e1e;
+	overflow-x: hidden;
+}
+
+#header {
+	width: 100%;
+	padding: 20px;
+}
+
+#nav-bar {
+	display: flex;
+	width: 100%;
+}
+
+ul {
+	width: 100%;
+	display: flex;
+}
+
+ul > div {
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	background: url("./images/line-link.png") right no-repeat;
+	display: flex;
+}
+
+ul > div:last-child {
+	background: none;
+}
+
+a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 20px;
+	color: #cfc39b;
+}
+
+ul > div > a:hover {
+	background: url("./images/nav-current.png") bottom center/70% 5px no-repeat;
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: #cfc39b;
+	margin: 20px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+#root {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#skin {
+	width: 80%;
+}
+
+#container-skin {
+	width: 100%;
+	height: 100%;
+	background-color: #160e1e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-skin > div {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+div:not(.skill-img) > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#toggle-skin {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+#toggle-skin > div {
+	width: 80px;
+	height: 80px;
+}
+
+article {
+	text-align: justify;
+	padding: 20px;
+}
+
+article > p {
+	padding: 5px 0;
+	line-height: 30px;
+}
+
+#grid {
+	display: grid;
+	padding: 20px;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+	width: 100%;
+}
+
+#grid > div {
+	padding: 15px;
+	display: flex;
+	border: 1px solid #a08945;
+}
+
+.skill-description {
+	padding: 0 15px;
+}
+
+.skill-description > p {
+	padding-bottom: 8px;
+	line-height: 25px;
+}
+
+#gems {
+	width: 100%;
+	border: 1px solid #a08945;
+	display: flex;
+}
+
+#gems > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #a08945;
+}
+
+#gems > div > div > p {
+	text-align: center;
+}
+
+#items-container {
+	display: flex;
+}
+
+#description > div > p {
+	padding: 20px 0;
+	font-weight: 600;
+	color: red;
+}
+
+#description > div > div {
+	text-align: justify;
+}
+
+#description > div > div > p {
+	line-height: 30px;
+}
