@@ -184,3 +184,13 @@ article > p {
 #description > div > div > p {
 	line-height: 30px;
 }
+
+#description-container {
+	width: 100%;
+	display: flex;
+	padding: 20px;
+}
+
+#description-container > div:last-child {
+	width: 90%;
+}
